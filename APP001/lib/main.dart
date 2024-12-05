@@ -9,29 +9,16 @@ void main(List<String> args) {
 
           body: SafeArea(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
-                  height: 100,
-                  width: 50,
-                  color: Colors.red,
+                Icon(
+                  Icons.ac_unit_outlined,
+                  size: 30.0,
                 ),
-                Container(
-                  height: 100,
-                  width: 50,
-                  color: Colors.white,
-                ),
-                Container(
-                  height: 100,
-                  width: 50,
-                  color: Colors.orange,
-                ),
-                Container(
-                  height: 100,
-                  width: 50,
+                 Icon(
+                  Icons.accessibility_sharp,
                   color: Colors.blue,
-                ),
+                  size: 30.0,
+                )
               ],
             ),
           )),
