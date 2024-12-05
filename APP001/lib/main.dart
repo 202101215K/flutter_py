@@ -8,29 +8,28 @@ void main(List<String> args) {
               Color(0xFFc1121f), //Color.fromARGB(255, 28, 10, 224),
 
           body: SafeArea(
-            child: Column(
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Container(
                   height: 100,
-                  width: 100,
+                  width: 50,
                   color: Colors.red,
                 ),
-
                 Container(
                   height: 100,
-                  width: 200,
+                  width: 50,
                   color: Colors.white,
                 ),
                 Container(
                   height: 100,
-                  width: 300,
+                  width: 50,
                   color: Colors.orange,
                 ),
                 Container(
                   height: 100,
-                  width: 100,
+                  width: 50,
                   color: Colors.blue,
                 ),
               ],
