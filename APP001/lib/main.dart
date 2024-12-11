@@ -4,22 +4,69 @@ void main(List<String> args) {
   runApp(
     MaterialApp(
       home: Scaffold(
-          backgroundColor:
-              Color(0xFFc1121f), //Color.fromARGB(255, 28, 10, 224),
-
-          body: SafeArea(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                    child: Image.network(
-                  "https://scontent.faqp4-1.fna.fbcdn.net/v/t39.30808-6/318618631_3437777176498910_3368643244247243052_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9eae26&_nc_eui2=AeHysJVOpJqdgzvcv3V3iF9Ky0CUz77ArWXLQJTPvsCtZaipKF1qerVFgwQESnQozltkysb3ZlybAjhsbwkjEq8b&_nc_ohc=mckouEz_xBYQ7kNvgFZgtwj&_nc_zt=23&_nc_ht=scontent.faqp4-1.fna&_nc_gid=AUt2xgCMZCQYKzL1PfFyZXg&oh=00_AYDZaXtXNW4ZJgcruvFztl9hoZP1BVdNLz9Zt1_yAkb5yw&oe=675764A8",
-                  height: 300,
-                  width: 300,
-                )),
-              ],
-            ),
-          )),
+        backgroundColor: const Color(0xFFffc300), //Colors.deepPurple,
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: 300,
+                height: 300,
+                color: Colors.redAccent,
+                child: Image.network(
+                  "https://i.scdn.co/image/ab67616d0000b2739362ae71577d833bc2f04311",
+                  fit: BoxFit.fill,
+                ),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  int numero = 100;
+                  print("ElevatedButton $numero");
+                },
+                child: const Text("ElevatedButton"),
+              ),
+              ElevatedButton.icon(
+                onPressed: () {},
+                label: Text("ElevatedButton Icon"),
+                icon: Icon(
+                  Icons.access_alarm_rounded,
+                ),
+              ),
+              FloatingActionButton(
+                onPressed: () {
+                  print("Click, desde el Floating Action Button");
+                },
+                child: const Icon(
+                  Icons.plus_one,
+                ),
+              ),
+              FilledButton(
+                onPressed: () {},
+                child: Text("FilledButton"),
+              ),
+              FilledButton.icon(
+                onPressed: () {},
+                label: Text("FilledButton Icon"),
+                icon: Icon(Icons.accessibility_new),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              OutlinedButton(
+                onPressed: () {},
+                child: Text("Outline Button"),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text("Text Button"),
+              ),
+            ],
+          ),
+        ),
+      ),
     ),
   );
 }
